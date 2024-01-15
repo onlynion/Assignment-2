@@ -5,6 +5,10 @@
     font-family: 'Mulish',sans-serif;
  }
 
+ body{
+    overflow-x: hidden ;
+ }
+
   /*=============================================
                 header related css
  ==============================================*/
@@ -224,6 +228,8 @@
     .nav-container{
         align-items: center;
         padding: 20px;
+        width: 100%;
+        margin: 10px;
     }
 
     .nav-container .menu-btn i{
@@ -278,7 +284,7 @@
     }
 
     .banner-container .form-container .div-1 #where{
-        width:24.93rem;
+        width:15.93rem;
         height: 2.25;
         margin-top: 1.5rem;
         margin-left: 0;
@@ -293,7 +299,7 @@
     .banner-container .form-container .div-2 #when,
     .banner-container .form-container .div-3 #select-type,
     .banner-container .form-container .div-4 #btn{
-        width: 25.93rem;
+        width: 16.93rem;
         height: 3.25rem;
         margin-top: 1.5rem;
         margin-left: 0;
