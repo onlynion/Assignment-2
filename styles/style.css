@@ -90,6 +90,127 @@
     display: none;
 }
 
+/*=============================================
+                banner related css
+==============================================*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.banner-container{
+    width: 73.125rem;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/header-bg.png);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 6rem 1rem;
+
+}
+
+.banner-container h1{
+    color: #FFF;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: -1rem;
+}
+
+.banner-container p{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-top: -3rem;
+}
+
+.banner-container .form-container{
+    margin-top: 60rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 56rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner-container .form-container .div-1 #where{
+    width: 9.875rem;
+    height: 3.1rem;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    padding-left: 1rem;
+
+}
+
+.banner-container .form-container .div-2 #when{
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    padding-left: 1rem;
+}
+
+.banner-container .form-container .div-3  #select-type{
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    padding-left: 1rem;
+}
+
+.banner-container .form-container .div-4 #btn img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.banner-container .form-container .div-4 #btn{
+    width: 10.875rem;
+    height: 3.25rem;
+    text-align: center;
+    display: inline;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 
 
 /*=============================================
@@ -98,10 +219,8 @@
  ==============================================
  ==============================================*/
 
- /* For mobile */
-
  @media screen and (max-width:600px) {
-
+/* nav css */
     .nav-container{
         align-items: center;
         padding: 20px;
@@ -144,4 +263,40 @@
         color:white;
         font-size: 1.5rem;
     }
+
+/* banner css */
+    .banner-container{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .banner-container .form-container{
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+        margin-top: 8rem;
+    }
+
+    .banner-container .form-container .div-1 #where{
+        width:24.93rem;
+        height: 2.25;
+        margin-top: 1.5rem;
+        margin-left: 0;
+    }
+    .banner-container .form-container .div-4 #btn{
+        justify-content: center;
+    }
+
+    .banner-container .form-container .div-4 #btn img{
+        padding-right: 1rem;
+    }
+    .banner-container .form-container .div-2 #when,
+    .banner-container .form-container .div-3 #select-type,
+    .banner-container .form-container .div-4 #btn{
+        width: 25.93rem;
+        height: 3.25rem;
+        margin-top: 1.5rem;
+        margin-left: 0;
+    }
+
  }
