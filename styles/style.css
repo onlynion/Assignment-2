@@ -1,0 +1,147 @@
+/*=============================================
+                Shared css
+ ==============================================*/
+ *{
+    font-family: 'Mulish',sans-serif;
+ }
+
+  /*=============================================
+                header related css
+ ==============================================*/
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /*=============================================
+                nav related css
+ ==============================================*/
+
+.nav-container{
+    width:73.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.125rem;
+}
+
+.nav-container .nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .nav-left h1{
+    color: #131318;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.nav-container .nav-left h1 span{
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.nav-container .nav-left img{
+    width:3rem;
+    height:3.5rem;
+    padding-right: 1rem;
+}
+.nav-container .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-container .nav-right ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-container .nav-right ul a{
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2.75rem;
+    transition: all 0.3s ease;
+}
+
+.nav-container .nav-right ul a:hover{
+    color:#FF5400;
+}
+
+ .menu-btn i{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+
+
+/*=============================================
+/*=============================================
+                responsive related css
+ ==============================================
+ ==============================================*/
+
+ /* For mobile */
+
+ @media screen and (max-width:600px) {
+
+    .nav-container{
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-container .menu-btn i{
+        padding-left: 200px;
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+    .nav-container .nav-right ul{
+        margin-top: 50px;
+        position: fixed;
+        top: 100px;
+        left:-110%;
+        height:100vh;
+        width: 100%;
+        background-color: #e07c49;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ .nav-right ul{
+        left:0%;
+    }
+
+    .nav-container .nav-right ul li
+    {
+        margin: 40px 0;
+        padding-right: 80px;
+    }
+
+    .nav-container .nav-right ul li a,
+    .nav-container .nav-right ul a:hover{
+        color:white;
+        font-size: 1.5rem;
+    }
+ }
