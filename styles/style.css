@@ -9,6 +9,9 @@
     overflow-x: hidden ;
  }
 
+
+
+
   /*=============================================
                 header related css
  ==============================================*/
@@ -57,6 +60,7 @@
     height:3.5rem;
     padding-right: 1rem;
 }
+
 .nav-container .nav-right{
     display: flex;
     align-items: center;
@@ -103,6 +107,7 @@
     align-items: center;
     margin-top: 50px;
 }
+
 .banner-container{
     width: 73.125rem;
     background-size: cover;
@@ -270,7 +275,6 @@ main{
     border: 0;
 }
 
-
 .main-container .main-right img{
     width: 30rem;
     height: 30rem;
@@ -281,6 +285,182 @@ main{
     margin-left: -1.4rem;
 }
 
+/*=============================================
+            destination related css
+==============================================*/
+.destination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.destination-container{
+    width: 73.125rem;
+    text-align: center;
+}
+
+.destination-container h1{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.destination-container .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-container .top .top-left{
+    width: 35.8135rem;
+    height: 18.75rem;
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/maldives.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container .top .top-right{
+    width: 35.8135rem;
+    height: 18.75rem;
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),url(../Images/indonesia.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container .top .top-left h1{
+    padding: 8.25rem 14.1875rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .top .top-right h1{
+    padding: 8.25rem 13.75rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.destination-container .mid-left{
+    width: 23.375rem;
+    height: 17.875rem;
+    background-image:linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 1000%), url(../Images/srilanka.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container .mid-left h1{
+    padding: 7.8125rem 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .mid-mid{
+    width: 29.625rem;
+    height: 17.875rem;
+    background-image:linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/north-america.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container .mid-mid h1{
+    padding: 7.8125rem 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .mid-right{
+    width: 17.125rem;
+    height: 17.875rem;
+    background-image:linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/kashmir.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container .mid-right h1{
+    padding: 7.8125rem 0 ;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.destination-container .bottom-left{
+    width: 29.5625rem;
+    height: 18.75rem;
+    background-image:linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/bangladesh.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container  .bottom-left h1{
+    padding: 8.25rem ;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-container .bottom-right{
+    width: 42.0625rem;
+    height: 18.75rem;
+    background-image:linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/bandarban.png);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.destination-container  .bottom-right h1{
+    padding: 8.25rem ;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
 
 
 /*=============================================
@@ -385,6 +565,39 @@ main{
     .main-container .main-right img{
         width: 100%;
         margin-top: 1.25rem;
+    }
+
+/* destination css */
+    .destination-container,
+    .destination-container .top,
+    .destination-container .mid,
+    .destination-container .bottom{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .destination-container .top .top-left,
+    .destination-container .top .top-right,
+    .destination-container .mid .mid-left,
+    .destination-container .mid .mid-mid,
+    .destination-container .mid .mid-right,
+    .destination-container .bottom .bottom-left,
+    .destination-container .bottom .bottom-right
+    {
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    .destination-container .mid .mid-left,
+    .destination-container .mid .mid-mid,
+    .destination-container .mid .mid-right{
+        background-size: cover;
+    }
+
+    .destination-container .top .top-left h1,
+    .destination-container .top .top-right h1{
+        margin-left: -6rem;
     }
 
  }
