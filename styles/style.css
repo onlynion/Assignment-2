@@ -25,9 +25,6 @@
     line-height: 1.625rem
  }
 
-
-
-
   /*=============================================
                 header related css
  ==============================================*/
@@ -336,6 +333,7 @@ main{
 .destination-container .top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .destination-container .top .top-left{
@@ -872,10 +870,6 @@ main{
         background-size: cover;
     }
 
-    .destination-container .top .top-left h1,
-    .destination-container .top .top-right h1{
-        margin:0 auto;
-    }
 
 /* card section css */
  .card-container{
@@ -1051,7 +1045,7 @@ main{
 .newsletter-container .news-right .btn{
     margin-top: 60%;
     margin-right: 0.5rem;
-    
+
 
 }
 
