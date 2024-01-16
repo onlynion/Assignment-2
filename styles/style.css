@@ -559,6 +559,187 @@ main{
     margin:0 auto;
 }
 
+/*=============================================
+            newsletter related css
+==============================================*/
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.newsletter-container{
+    width: 73.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.newsletter-container .news-left{
+    width: 30%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.newsletter-container .news-left .line{
+    width: 100%;
+    height: 0.0625rem;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.newsletter-container .news-left #name{
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    padding: 0.5;
+}
+
+.newsletter-container .news-left #email{
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    padding: 0.5;
+}
+
+.newsletter-container .news-left .btn{
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    background: #FF5400;
+    border: 0;
+    padding: 0.5;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.newsletter-container .news-right .travel{
+    width: 40%;
+    height: 7.5rem;
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    transform: rotate(-19.628deg);
+    margin-top: 48%;
+    margin-left: 50%;
+    margin-bottom: 2rem;
+}
+
+.newsletter-container .news-right{
+    width: 63%;
+    height: 32.625rem;
+    background-image: url(../Images/newsletter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end;
+    border-radius: 16px;
+
+}
+
+.newsletter-container .news-right .btn{
+    width: 20.25rem;
+    height: 7.25rem;
+    margin-left:0;
+    transform: rotate(-19.628deg);
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    border-radius: 1rem;
+    margin-top: 48%;
+    margin-right: 0.5rem;
+}
+
+.newsletter-container .news-right .btn span{
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/*=============================================
+            footer related css
+==============================================*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer .footer-container{
+    width:54.5rem;
+    text-align: center;
+}
+
+.footer-container .logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .logo-name img{
+    width: 2.5rem;
+    height: 2.875;
+    margin-right: 0.5rem;
+}
+
+.footer-container .logo-name h1{
+    color:  #131318;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-container .logo-name h1 span{
+    color: #FF5400;
+}
+
+.footer-container .social img{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.footer-container .line{
+    width: 54.5rem;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.footer-container .foot-head{
+    color: #131318;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 3rem;
+}
+
+
+
 
 /*=============================================
 ===============================================
@@ -717,11 +898,58 @@ main{
     margin: 0 auto;
  }
 
-
-
  .card-container .top-card{
     flex-direction: column;
  }
+
+ /* Newsletter section css */
+ .newsletter{
+    width: 100%;
+ }
+
+.newsletter-container{
+    flex-direction: column;
+    width: 100%;
+}
+
+.newsletter-container .news-left{
+    width: 80%;
+    height: 10%;
+    /* margin-left: 1.5rem; */
+    margin-bottom: 2rem;
+}
+
+.newsletter-container .news-right
+{
+    width: 100%;
+    height: 10%;
+}
+
+.newsletter-container .news-right .btn{
+    width:50%;
+    font-size: 0.75rem ;
+    height: 30%;
+    border-radius: 0.5rem;
+    margin-bottom: 8%;
+    padding: 1rem;
+}
+
+.newsletter-container .news-right .btn span{
+    font-size: 1rem;
+}
+
+/* footer section css */
+.footer{
+    width: 100%;
+}
+
+.footer-container{
+    text-align: center;
+    background-size: cover;
+    width:100%;
+}
+
+
 
  }
 
@@ -733,13 +961,12 @@ main{
 ===============================================*/
 
 @media screen and (min-width:992px) and (max-width:1450px) {
+/* main section css */
     .main-container
      {
         width: 100%;
         justify-content: space-between;
     }
-
-
 
     .main-container .main-right img{
         width: 100%;
@@ -751,6 +978,7 @@ main{
         width: 50%;
     }
 
+ /* destination section css */
     .destination-container,
     .destination-container .top,
     .destination-container .mid,
@@ -763,6 +991,16 @@ main{
         width: 49%;
         background-size: cover;
         margin: 1px;
+    }
+
+    .destination-container .top .top-left h1{
+        margin-left: -3rem;
+        margin-top: -0.25rem;
+    }
+
+    .destination-container .top .top-right h1{
+        margin-left: -3rem;
+        margin-top: -0.25rem;
     }
 
     .destination-container .mid .mid-left{
@@ -793,4 +1031,34 @@ main{
         width:64%;
         background-size: cover;
     }
+
+/* card section css */
+    .card-container{
+        width: 100%;
+    }
+
+    .card-container .bottom-card{
+        width: 50%;
+    }
+
+/* newsletter section css */
+.newsletter{
+    width: 100%;
+}
+
+.newsletter-container{
+    width: 100%;
+}
+
+.newsletter-container .news-left{
+    width: 32%;
+}
+.newsletter-container .news-right{
+    width: 60%;
+}
+
+.newsletter-container .news-right .btn{
+    margin-top: 61%;
+}
+
 }
