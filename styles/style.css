@@ -224,7 +224,6 @@
 /*=============================================
                 main related css
 ==============================================*/
-
 main{
     display: flex;
     justify-content: center;
@@ -284,6 +283,7 @@ main{
     word-wrap: break-word;
     margin-left: -1.4rem;
 }
+
 
 /*=============================================
             destination related css
@@ -464,10 +464,10 @@ main{
 
 
 /*=============================================
-/*=============================================
-                responsive related css
- ==============================================
- ==============================================*/
+===============================================
+            responsive for mobile device
+===============================================
+===============================================*/
 
  @media screen and (max-width:600px) {
 /* nav css */
@@ -557,6 +557,7 @@ main{
     }
 
     .main-container  .main-left{
+        width: 100%;
         margin: 0;
         margin-left: 20px;
 
@@ -601,3 +602,73 @@ main{
     }
 
  }
+
+
+ /*=============================================
+===============================================
+        responsive for desktop device
+===============================================
+===============================================*/
+
+@media screen and (min-width:992px) and (max-width:1450px) {
+    .main-container
+     {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+    .main-container .main-right img{
+        width: 100%;
+
+    }
+
+    .main-container .main-right,
+    .main-container .main-left{
+        width: 50%;
+    }
+
+    .destination-container,
+    .destination-container .top,
+    .destination-container .mid,
+    .destination-container .bottom{
+        width: 100%;
+    }
+
+    .destination-container .top .top-left,
+    .destination-container .top .top-right{
+        width: 49%;
+        background-size: cover;
+        margin: 1px;
+    }
+
+    .destination-container .mid .mid-left{
+        width:24%;
+        background-size: cover;
+
+    }
+
+    .destination-container .mid .mid-mid{
+        width:54%;
+        background-size: cover;
+        margin: 1px;
+    }
+
+    .destination-container .mid .mid-right{
+        width:19%;
+    }
+
+    .destination-container .bottom .bottom-left{
+        width:34%;
+        background-size: cover;
+    }
+
+    .destination-container .bottom .bottom-left h1{
+        margin-left: -50px;
+    }
+    .destination-container .bottom .bottom-right{
+        width:64%;
+        background-size: cover;
+    }
+}
