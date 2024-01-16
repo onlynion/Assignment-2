@@ -654,7 +654,6 @@ main{
 .newsletter-container .news-right .btn{
     width: 20.25rem;
     height: 7.25rem;
-    margin-left:0;
     transform: rotate(-19.628deg);
     background: #FF5400;
     color: #FFF;
@@ -667,6 +666,7 @@ main{
     border-radius: 1rem;
     margin-top: 48%;
     margin-right: 0.5rem;
+    margin-left:0;
 }
 
 .newsletter-container .news-right .btn span{
@@ -681,61 +681,58 @@ main{
             footer related css
 ==============================================*/
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
     background: rgba(19, 19, 24, 0.05);
+    margin-top: 8rem;
+    padding: 5rem 0;
 }
 
-.footer .footer-container{
-    width:54.5rem;
-    text-align: center;
+.footer-container{
+    width: 54.5rem;
+    margin: 0 auto;
 }
 
-.footer-container .logo-name{
+.footer-container .logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
-.footer-container .logo-name img{
-    width: 2.5rem;
-    height: 2.875;
-    margin-right: 0.5rem;
-}
-
-.footer-container .logo-name h1{
-    color:  #131318;
+.footer-container .logo h1{
+    color: #131318;
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-.footer-container .logo-name h1 span{
+.footer-container .logo h1 span{
     color: #FF5400;
+}
+
+.footer-container .para{
+    text-align: center;
 }
 
 .footer-container .social img{
     width: 2rem;
     height: 2rem;
-    margin: 1rem;
+    padding: 1rem;
+}
+
+.footer-container .social{
+    text-align: center;
 }
 
 .footer-container .line{
     width: 54.5rem;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
+    margin: 1rem 0;
 }
 
-.footer-container .foot-head{
-    color: #131318;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 3rem;
+.footer-container .copy-r{
+    text-align: center;
 }
 
 
@@ -870,13 +867,14 @@ main{
 
     .destination-container .mid .mid-left,
     .destination-container .mid .mid-mid,
-    .destination-container .mid .mid-right{
+    .destination-container .mid .mid-right,
+    .destination-container .bottom .bottom-left{
         background-size: cover;
     }
 
     .destination-container .top .top-left h1,
     .destination-container .top .top-right h1{
-        margin-left: -6rem;
+        margin:0 auto;
     }
 
 /* card section css */
@@ -939,18 +937,10 @@ main{
 }
 
 /* footer section css */
-.footer{
-    width: 100%;
-}
-
-.footer-container{
-    text-align: center;
-    background-size: cover;
-    width:100%;
-}
-
-
-
+    .footer-container,
+    .footer-container .line{
+        width: 100%;
+    }
  }
 
 
@@ -960,7 +950,7 @@ main{
 ===============================================
 ===============================================*/
 
-@media screen and (min-width:992px) and (max-width:1450px) {
+@media screen and (min-width:992px) and (max-width:1400px) {
 /* main section css */
     .main-container
      {
@@ -1055,10 +1045,14 @@ main{
 }
 .newsletter-container .news-right{
     width: 60%;
+
 }
 
 .newsletter-container .news-right .btn{
-    margin-top: 61%;
+    margin-top: 60%;
+    margin-right: 0.5rem;
+    
+
 }
 
 }
