@@ -733,6 +733,54 @@ main{
     text-align: center;
 }
 
+/*=============================================
+            gallery related css
+==============================================*/
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 5rem 0;
+    margin: 5rem 0;
+}
+
+.gallery-container{
+    width: 73.125rem;
+    text-align: center;
+
+}
+
+.gallery-container .g-heading h1{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.gallery-container .image{
+    display: grid;
+    grid-template-columns: repeat(3 ,3fr);
+
+
+}
+
+.gallery-container .image .pic-1{
+    transition: all 0.3s ease;
+}
+
+.gallery-container .image .pic-1:hover {
+    box-shadow: 10px 10px 10px 10px #e07c49;
+}
+
+.gallery-container .image img{
+    width:20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-top: 4.375rem;
+}
 
 
 
@@ -941,6 +989,28 @@ main{
     .footer-container .line{
         width: 100%;
     }
+
+/* gallery section css */
+    .gallery-container{
+        width: 100%;
+    }
+
+    .gallery-container .image img{
+        width:11rem;
+        height:11rem;
+        margin:0;
+        padding: 0;
+    }
+
+    .gallery-container .image .pic-1{
+        padding: 0;
+    }
+
+    .gallery-container .image{
+        grid-template-columns: repeat(2 ,2fr);
+        gap: 0;
+        padding: 0;
+    }
  }
 
 
@@ -1032,27 +1102,28 @@ main{
     }
 
 /* newsletter section css */
-.newsletter{
-    width: 100%;
-}
+    .newsletter{
+        width: 100%;
+    }
 
-.newsletter-container{
-    width: 100%;
-}
+    .newsletter-container{
+        width: 100%;
+    }
 
-.newsletter-container .news-left{
-    width: 32%;
-}
-.newsletter-container .news-right{
-    width: 60%;
+    .newsletter-container .news-left{
+        width: 32%;
+    }
+    .newsletter-container .news-right{
+        width: 60%;
 
-}
+    }
 
-.newsletter-container .news-right .btn{
-    margin-top: 60%;
-    margin-right: 0.5rem;
+    .newsletter-container .news-right .btn{
+        margin-top: 60%;
+        margin-right: 0.5rem;
 
 
-}
+    }
+
 
 }
